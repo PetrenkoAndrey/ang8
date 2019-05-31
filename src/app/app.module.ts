@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotComponent } from './forgot/forgot.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     TermsOfUseComponent,
     PrivacyPolicyComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    SignUpComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,
