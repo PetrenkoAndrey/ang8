@@ -1,11 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a> | 
-    <a routerLink="/about" routerLinkActive="active">About</a> | 
-    <a routerLink="/terms-of-use" routerLinkActive="active">Terms Of Use</a> | 
-    <a routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a> | 
-    <a routerLink="/homeasda" routerLinkActive="active">404-test</a>
-  </nav>
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Angular 8</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/page1" routerLinkActive="active">Page 1</a></li>
+      <li><a routerLink="/page2" routerLinkActive="active">Page 2</a></li>
+      <li><a routerLink="/page3" routerLinkActive="active">Page 3</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Service pages<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/terms-of-use" routerLinkActive="active">Terms Of Use</a></li>
+          <li><a routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a></li>
+          <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="/home"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a routerLink="/home"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
 <router-outlet></router-outlet>
