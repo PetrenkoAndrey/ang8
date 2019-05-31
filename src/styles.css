@@ -7,7 +7,7 @@ footer {
     height: 80px;
   }
 
-  .signup-form, .login-form{
+  .signup-form, .login-form, .forgot-form{
     position: absolute;
     top: 50%;
     left: 50%;
