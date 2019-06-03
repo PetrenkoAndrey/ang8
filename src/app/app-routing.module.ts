@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { RecoveryComponent } from './recovery/recovery.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent},
   { path: 'login', component: LoginComponent},
   { path: 'forgot', component: ForgotComponent},
+  { path: 'recovery', component: RecoveryComponent},
+  { path: 'contact-us', component: ContactUsComponent},
   { path: 'about', component: AboutComponent},
   { path: 'terms-of-use', component: TermsOfUseComponent},
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
