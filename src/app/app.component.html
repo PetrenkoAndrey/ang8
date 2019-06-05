@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--NAV BAR CONTENT START-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -18,10 +18,25 @@
         </ul>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul *ngIf="!loggedIn" class="nav navbar-nav navbar-right">
       <li><a routerLink="/sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+    <ul *ngIf="loggedIn" class="nav navbar-nav navbar-right">
+    <li><a (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+  </ul>
   </div>
 </nav>
+<!--NAV BAR CONTENT END-->
+
+
 <router-outlet></router-outlet>
+
+
+<!--FOOTER CONTENT START-->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
+    <div class="footer-copyright text-center py-3">© 2015-2019 OfferCraft,
+      <a href="http://www.offercraft.com" target="_blank"> http://offercraft.com</a>
+    </div>
+</footer>
+<!--FOOTER CONTENT END-->

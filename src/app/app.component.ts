@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'New APP by Andy';
+  loggedIn = true;
+
+  public logOut(){
+    this.loggedIn = false;
+  }
 }
