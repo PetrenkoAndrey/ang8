@@ -23,7 +23,7 @@
       <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
     <ul *ngIf="loggedIn" class="nav navbar-nav navbar-right">
-    <li><a (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+    <li><a routerLink="/login" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
   </ul>
   </div>
 </nav>
